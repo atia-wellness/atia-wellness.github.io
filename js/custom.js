@@ -404,7 +404,8 @@ POTENZA.searchbar = function () {
       Animated circle text
   *************************/
   POTENZA.animatedcircletext = function () {
-    const text = document.querySelector(".text");
+  const text = document.querySelector(".text");
+  if (text) {
     text.innerHTML = text.innerText
       .split("")
       .map(
@@ -412,6 +413,7 @@ POTENZA.searchbar = function () {
       )
       .join("");
   }
+};
 
     /*************************
      Qty
